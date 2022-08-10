@@ -39,19 +39,19 @@ public class Creation {
 					 player.setPlayerSubclass("Berzerker");
 					 q.addPlayer(player);
 					 
-					 System.out.println(player);
+					 
 					 startAdventure();
 				 }
 				 else if(pu.equals("2")) {
 					 player.setPlayerSubclass("Dual Swordsman");
 					 q.addPlayer(player);
-					 System.out.println(player);
+					 
 					 startAdventure();
 				 }
 				 else if(pu.equals("3")) {
 					 player.setPlayerSubclass("Knight Lancer");
 					 q.addPlayer(player);
-					 System.out.println(player);
+					 
 					 startAdventure();
 				 }
 			}else if(gath.equals("2")) {				
@@ -61,19 +61,19 @@ public class Creation {
 				 if(bu.equals("1")) {
 					 player.setPlayerSubclass("Warlock");
 					 q.addPlayer(player);
-					 System.out.println(player);
+					 
 					 startAdventure();
 				 }
 				 else if(bu.equals("2")) {
 					 player.setPlayerSubclass("Elementalist");
 					 q.addPlayer(player);
-					 System.out.println(player);
+					 
 					 startAdventure();
 				 }
 				 else if(bu.equals("3")) {
 					 player.setPlayerSubclass("Bard");
 					 q.addPlayer(player);
-					 System.out.println(player);
+					 
 					 startAdventure();
 				 }
 			}else if(gath.equals("3")) {
@@ -84,19 +84,19 @@ public class Creation {
 				 if(au.equals("1")) {
 					 player.setPlayerSubclass("Sharpshooter");
 					 q.addPlayer(player);
-					 System.out.println(player);
+					 
 					 startAdventure();
 				 }
 				 else if(au.equals("2")) {
 					 player.setPlayerSubclass("Cannoner");
 					 q.addPlayer(player);
-					 System.out.println(player);
+					 
 					 startAdventure();
 				 }
 				 else if(au.equals("3")) {
 					 player.setPlayerSubclass("Archer");
 					 q.addPlayer(player);
-					 System.out.println(player);
+					 
 					startAdventure();
 				 }
 			}
@@ -345,7 +345,7 @@ public class Creation {
 					
 				System.out.println(one + " did " + att + " damage!");			
 				System.out.println("The " + enemey2.getAlias() + " attacks and does " + ad2 + " damage!");
-				System.out.println("The " + enemey2.getAlias() + " now has " + hp2 + " and you now have " + ph);
+				System.out.println("The " + boss.getAlias() + " now has " + hp3 + " HP and you now have " + hp + " HP");
 					if(ph <= 0) {
 						System.out.println("You are too weak to continue!");
 						break Battle2Loop;
@@ -361,7 +361,7 @@ public class Creation {
 					ph -= ad2;	
 				System.out.println(two + " did " + att + " damage!");
 				System.out.println("The " + enemey2.getAlias() + " attacks and does " + ad2 + " damage!");
-				System.out.println("The " + enemey2.getAlias() + " now has " + hp2 + " and you now have " + ph);
+				System.out.println("The " + boss.getAlias() + " now has " + hp3 + " HP and you now have " + hp + " HP");
 					if(ph <= 0) {
 						System.out.println("You are too weak to continue!");
 						break Battle2Loop;
@@ -377,7 +377,7 @@ public class Creation {
 					ph -= ad2;
 				System.out.println(three + " did " + att + " damage!");
 				System.out.println("The " + enemey2.getAlias() + " attacks and does " + ad2 + " damage!");
-				System.out.println("The " + enemey2.getAlias() + " now has " + hp2 + " and you now have " + ph);
+				System.out.println("The " + boss.getAlias() + " now has " + hp3 + " HP and you now have " + hp + " HP");
 					if(ph <= 0) {
 						System.out.println("You are too weak to continue!");
 						break Battle2Loop;
@@ -395,7 +395,7 @@ public class Creation {
 					HealthPotion -= 1;
 				System.out.println("You drank a health potion and restored 50 HP! \nYou now have " + HealthPotion + " health potions remaining.");
 				System.out.println("The " + enemey2.getAlias() + " attacks and does " + enemey2.getAlias() + " damage!");
-				System.out.println("The " + enemey2.getAlias() + " now has " + hp2 + " and you now have " + ph);
+				System.out.println("The " + boss.getAlias() + " now has " + hp3 + " HP and you now have " + hp + " HP");
 					if(ph <= 0) {
 						System.out.println("You are too weak to continue!");
 						break Battle2Loop;
@@ -430,7 +430,7 @@ public class Creation {
 					
 				System.out.println(one + " did " + att + " damage!");			
 				System.out.println("The " + boss.getAlias() + " attacks and does " + ad3 + " damage!");
-				System.out.println("The " + boss.getAlias() + " now has " + hp3 + " and you now have " + ph);
+				System.out.println("The " + boss.getAlias() + " now has " + hp3 + " HP and you now have " + hp + " HP");
 					if(ph <= 0) {
 						System.out.println("You are too weak to continue!");
 						break Battle3Loop;
@@ -446,7 +446,7 @@ public class Creation {
 					ph -= ad3;	
 				System.out.println(two + " did " + att + " damage!");
 				System.out.println("The " + boss.getAlias() + " attacks and does " + ad3 + " damage!");
-				System.out.println("The " + boss.getAlias() + " now has " + hp3 + " and you now have " + ph);
+				System.out.println("The " + boss.getAlias() + " now has " + hp3 + " HP and you now have " + hp + " HP");
 					if(ph <= 0) {
 						System.out.println("You are too weak to continue!");
 						break Battle3Loop;
@@ -462,7 +462,7 @@ public class Creation {
 					ph -= ad3;
 				System.out.println(three + " did " + att + " damage!");
 				System.out.println("The " + boss.getAlias() + " attacks and does " + ad3 + " damage!");
-				System.out.println("The " + boss.getAlias() + " now has " + hp3 + " and you now have " + ph);
+				System.out.println("The " + boss.getAlias() + " now has " + hp3 + " HP and you now have " + hp + " HP");
 					if(ph <= 0) {
 						System.out.println("You are too weak to continue!");
 						break Battle3Loop;
@@ -481,7 +481,7 @@ public class Creation {
 					HealthPotion -= 1;
 				System.out.println("You drank a health potion and restored 50 HP! \nYou now have " + HealthPotion + " health potions remaining.");
 				System.out.println("The " + boss.getAlias() + " attacks and does " + ad3 + " damage!");
-				System.out.println("The " + boss.getAlias() + " now has " + hp3 + " and you now have " + hp);
+				System.out.println("The " + boss.getAlias() + " now has " + hp3 + " HP and you now have " + hp + " HP");
 					if(ph <= 0) {
 						System.out.println("You are too weak to continue!");
 						break Battle3Loop;
@@ -584,7 +584,7 @@ public class Creation {
 				ph -= ad;
 			System.out.println(three + " did " + att + " damage!");
 			System.out.println("The " + enemey.getAlias() + " attacks and does " + ad + " damage!");
-			System.out.println("The " + enemey.getAlias() + " now has " + hp + " HP and you now have " + ph + " HP");
+			System.out.println("The " + boss.getAlias() + " now has " + hp3 + " HP and you now have " + hp + " HP");
 				if(ph <= 0) {
 					System.out.println("You are too weak to continue!");
 					f++;
@@ -603,7 +603,7 @@ public class Creation {
 				HealthPotion -= 1;
 			System.out.println("You drank a health potion and restored 50 HP! \nYou now have " + HealthPotion + " health potions remaining.");
 			System.out.println("The " + enemey.getAlias() + " attacks and does " + ad + " damage!");
-			System.out.println("The " + enemey.getAlias() + " now has " + hp + " HP and you now have " + ph + " HP");
+			System.out.println("The " + boss.getAlias() + " now has " + hp3 + " HP and you now have " + hp + " HP");
 				if(ph <= 0) {
 					System.out.println("You are too weak to continue!");
 					f++;
@@ -641,7 +641,7 @@ public class Creation {
 					
 				System.out.println(one + " did " + att * 1.5 + " damage!");			
 				System.out.println("The " + enemey2.getAlias() + " attacks and does " + ad2 + " damage!");
-				System.out.println("The " + enemey2.getAlias() + " now has " + hp2 + " and you now have " + ph);
+				System.out.println("The " + boss.getAlias() + " now has " + hp3 + " HP and you now have " + hp + " HP");
 					if(ph <= 0) {
 						System.out.println("You are too weak to continue!");
 						f++;
@@ -659,7 +659,7 @@ public class Creation {
 					ph -= ad2;	
 				System.out.println(two + " did " + att + " damage!");
 				System.out.println("The " + enemey2.getAlias() + " attacks and does " + ad2 + " damage!");
-				System.out.println("The " + enemey2.getAlias() + " now has " + hp2 + " and you now have " + ph);
+				System.out.println("The " + boss.getAlias() + " now has " + hp3 + " HP and you now have " + hp + " HP");
 					if(ph <= 0) {
 						System.out.println("You are too weak to continue!");
 						f++;
@@ -677,7 +677,7 @@ public class Creation {
 					ph -= ad2;
 				System.out.println(three + " did " + att * 0.7 + " damage!");
 				System.out.println("The " + enemey2.getAlias() + " attacks and does " + ad2 + " damage!");
-				System.out.println("The " + enemey2.getAlias() + " now has " + hp2 + " and you now have " + ph);
+				System.out.println("The " + boss.getAlias() + " now has " + hp3 + " HP and you now have " + hp + " HP");
 					if(ph <= 0) {
 						System.out.println("You are too weak to continue!");
 						f++;
@@ -696,7 +696,7 @@ public class Creation {
 					HealthPotion -= 1;
 				System.out.println("You drank a health potion and restored 50 HP! \nYou now have " + HealthPotion + " health potions remaining.");
 				System.out.println("The " + enemey2.getAlias() + " attacks and does " + enemey2.getAlias() + " damage!");
-				System.out.println("The " + enemey2.getAlias() + " now has " + hp2 + " and you now have " + ph);
+				System.out.println("The " + boss.getAlias() + " now has " + hp3 + " HP and you now have " + hp + " HP");
 					if(ph <= 0) {
 						System.out.println("You are too weak to continue!");
 						f++;
@@ -734,7 +734,7 @@ public class Creation {
 					
 				System.out.println(one + " did " + att + " damage!");			
 				System.out.println("The " + boss.getAlias() + " attacks and does " + ad3 + " damage!");
-				System.out.println("The " + boss.getAlias() + " now has " + hp3 + " and you now have " + ph);
+				System.out.println("The " + boss.getAlias() + " now has " + hp3 + " HP and you now have " + hp + " HP");
 					if(ph <= 0) {
 						System.out.println("You are too weak to continue!");
 						f++;
@@ -752,7 +752,7 @@ public class Creation {
 					ph -= ad3;	
 				System.out.println(two + " did " + att + " damage!");
 				System.out.println("The " + boss.getAlias() + " attacks and does " + ad3 + " damage!");
-				System.out.println("The " + boss.getAlias() + " now has " + hp3 + " and you now have " + ph);
+				System.out.println("The " + boss.getAlias() + " now has " + hp3 + " HP and you now have " + hp + " HP");
 					if(ph <= 0) {
 						System.out.println("You are too weak to continue!");
 						f++;
@@ -770,7 +770,7 @@ public class Creation {
 					ph -= ad3;
 				System.out.println(three + " did " + att * 1.3 + " damage!");
 				System.out.println("The " + boss.getAlias() + " attacks and does " + ad3 + " damage!");
-				System.out.println("The " + boss.getAlias() + " now has " + hp3 + " and you now have " + ph);
+				System.out.println("The " + boss.getAlias() + " now has " + hp3 + " HP and you now have " + hp + " HP");
 					if(ph <= 0) {
 						System.out.println("You are too weak to continue!");
 						f++;
@@ -790,7 +790,7 @@ public class Creation {
 					HealthPotion -= 1;
 				System.out.println("You drank a health potion and restored 50 HP! \nYou now have " + HealthPotion + " health potions remaining.");
 				System.out.println("The " + boss.getAlias() + " attacks and does " + ad3 + " damage!");
-				System.out.println("The " + boss.getAlias() + " now has " + hp3 + " and you now have " + hp);
+				System.out.println("The " + boss.getAlias() + " now has " + hp3 + " HP and you now have " + hp + " HP");
 					if(ph <= 0) {
 						System.out.println("You are too weak to continue!");
 						f++;
