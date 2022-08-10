@@ -23,7 +23,7 @@ public class ConnectionUtil {
 			
 			String url = "jdbc:postgresql://javafsrevature.ceyl9cnfz7h5.us-east-1.rds.amazonaws.com:5432/p0";
 			String username = "postgres"; 
-			String password = "Hunter22"; 
+			String password = "Hunter22";
 			
 			connection = DriverManager.getConnection(url, username, password);
 			
